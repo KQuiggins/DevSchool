@@ -28,7 +28,7 @@ const LoginScreen = ({ navigation }) => {
 		} else if (!password) {
 			Alert.alert('Please enter your password');
 		} else {
-			AsyncStorage.getItem(userLoggedIn, (err, result) => {
+			AsyncStorage.getItem('userLoggedIn', (err, result) => {
 				if (result !== 'none') {
 					Alert.alert('User logged in already');
 					navigation.navigate('Home');
@@ -41,7 +41,7 @@ const LoginScreen = ({ navigation }) => {
 								);
 							} else {
 								AsyncStorage.setItem(
-									userLoggedIn,
+									'userLoggedIn',
 									username,
 									(err, result) => {
 										Alert.alert(`${username} logged in`);
