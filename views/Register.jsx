@@ -85,38 +85,46 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         alignItems: 'center',
-        paddingTop: '45%',
-        paddingBottom: '5%',
+        justifyContent: 'center', 
+        paddingTop: 30, 
+        paddingBottom: 30,
+        backgroundColor: '#f5f5f5', 
     },
     heading: {
-        fontSize: 16,
-        flex: 1,
-        color: '#fff',
-        fontWeight: 'bold'
+        fontSize: 20, 
+        fontWeight: 'bold',
+        color: '#333', 
+        marginBottom: 20, 
     },
     inputs: {
-        flex: 1,
         width: '80%',
         marginTop: 12,
         height: 45,
         borderWidth: 1,
+        borderColor: '#ccc', 
         fontSize: 16,
-        fontColor: '#000000',
-
+        color: '#000', 
+        padding: 10, 
+        borderRadius: 5,
     },
     labels: {
         paddingBottom: 10,
         fontSize: 16,
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        color: '#666', 
+        alignSelf: 'center', 
+        width: '80%', 
     },
     buttons: {
-        margin: 5,
+        marginTop: 10,
         fontSize: 16,
         backgroundColor: '#0066cc',
         color: '#fff',
-        width: '150',
+        width: '80%', 
         height: 50,
         textAlign: 'center',
-        padding: 15
+        padding: 12,
+        borderRadius: 5, 
+        elevation: 2,
     }
-})
+});
